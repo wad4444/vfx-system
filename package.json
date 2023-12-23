@@ -1,7 +1,7 @@
 {
   "name": "@rbxts/vfx-system",
   "version": "1.0.0",
-  "description": "",
+  "description": "A system that utilizes shared classes to provide user abstraction for manipulating visual effects.",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
@@ -16,6 +16,7 @@
     "out",
     "!**/*.tsbuildinfo"
   ],
+  "repository": "https://github.com/g1mmethemoney/vfx-system",
   "publishConfig": {
     "access": "public"
   },
