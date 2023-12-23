@@ -1,24 +1,15 @@
 {
-  "name": "@rbxts/vfx-system",
+  "name": "vfx-system",
   "version": "1.0.0",
   "description": "",
-  "main": "out/init.lua",
+  "main": "index.js",
   "scripts": {
     "build": "rbxtsc",
-    "watch": "rbxtsc -w",
-    "prepublishOnly": "npm run build"
+    "watch": "rbxtsc -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "types": "out/index.d.ts",
-  "files": [
-    "out",
-    "!**/*.tsbuildinfo"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
   "devDependencies": {
     "@rbxts/compiler-types": "^2.2.0-types.0",
     "@rbxts/types": "^1.0.737",
