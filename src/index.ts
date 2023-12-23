@@ -65,7 +65,8 @@ export abstract class VisualEffect<T extends object = {}> {
 			const character = Player.Character;
 			if (!character) return;
 
-			if (Origin.sub(character.GetPivot().Position).Magnitude > Radius) return;
+			const characterPosition = character.PrimaryPart?.Position || character.GetPivot().Position;
+			if (Origin.sub(characterPosition).Magnitude > Radius) return;
 			this.Start();
 		});
 	}
