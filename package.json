@@ -34,6 +34,6 @@
   },
   "dependencies": {
     "@rbxts/services": "^1.5.1",
-    "@rbxts/shared-class": "^1.0.1"
+    "@rbxts/shared-class": "^1.0.3"
   }
 }

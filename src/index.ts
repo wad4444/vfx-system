@@ -1,13 +1,14 @@
-import { ClientMethod, SharedClass, SharedMethod } from "@rbxts/shared-class";
+import { ClientMethod, SharedClass, SharedMethod, StartClient, StartServer } from "@rbxts/shared-class";
 import { OnlyClient } from "./utils";
-import { Players } from "@rbxts/services";
+import { Players, RunService } from "@rbxts/services";
 
 type Constructor<T extends object> = new (...args: never[]) => T;
 
 const localPlayer = Players.LocalPlayer;
+RunService.IsServer() ? StartServer() : StartClient();
 
 export abstract class VisualEffect<T extends object = {}> {
-	private config!: T;
+	protected config!: T;
 	constructor(config: T) {
 		this.SetConfig(config);
 	}
