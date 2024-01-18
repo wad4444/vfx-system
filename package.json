@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/vfx-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A system that utilizes shared classes to provide user abstraction for manipulating visual effects.",
   "main": "out/init.lua",
   "scripts": {
@@ -35,6 +35,6 @@
   },
   "dependencies": {
     "@rbxts/services": "^1.5.1",
-    "@rbxts/shared-class": "^1.0.3"
+    "@rbxts/shared-class": "^1.0.6"
   }
 }
