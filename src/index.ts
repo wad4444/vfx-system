@@ -71,8 +71,12 @@ export abstract class VisualEffect<T extends object = {}> {
 			this.Start();
 		});
 	}
+
+	public Destroy() {}
 }
 
 export function VisualEffectDecorator<T extends Constructor<VisualEffect>>(Constuructor: T) {
-	SharedClass({})(Constuructor);
+	SharedClass({
+		DestroyMethodName: "Destroy",
+	})(Constuructor);
 }
